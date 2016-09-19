@@ -15,12 +15,12 @@ var stream = browserSync.stream;
 var config = {
   views: 'source/views/',
   styles: 'source/styles/',
-  build: 'static/'
+  build: 'docs/'
 }
 
 gulp.task('browser-sync', function() {
   browserSync({
-    server: ['.', 'static'],
+    server: ['.', 'docs'],
     port: 3000
   });
 });
